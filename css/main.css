@@ -1,0 +1,895 @@
+.nav-bar .nav, .nav-bar .nav .slide-bar, .nav-bar .nav .slide-bar nav, .nav-bar .nav .slide-bar nav ul, .nav-bar .search, .nav-bar .search form, .latest-news .content, .latest-news .content .search-box, .latest-news .content .search-box form, .world-cars .content .news .cars-prices .cards, .world-cars .content .marka .images a.link-img, .world-cars .content .video .card-video .card .fade-out ul, footer .form-search .content, footer .form-search .scoial-media, footer .form-search .scoial-media .scoial ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+section,
+footer {
+  overflow: hidden; }
+
+.nav-bar .nav .slide-bar, .nav-bar .nav .slide-bar nav, .nav-bar .nav .slide-bar nav ul, .nav-bar .nav .slide-bar nav li a, .nav-bar .search form, .nav-bar .search form input, .nav-bar .search form button, .world-cars .content .news .cars-prices .cards .car-img .img, .world-cars .content .marka .images a.link-img, footer .form-search .scoial-media .scoial ul li a {
+  -webkit-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out; }
+
+button,
+a:link,
+button:active,
+button:focus,
+input,
+input:focus {
+  border: none;
+  outline: none;
+  background-color: transparent; }
+
+select,
+select:focus {
+  outline: none; }
+
+a:link,
+button {
+  cursor: pointer;
+  text-decoration: none; }
+
+.latest-news .content .search-box .bootstrap-select .dropdown-toggle .filter-option-inner-inner, .latest-news .content .search-box .bootstrap-select .dropdown-toggle:focus,
+.latest-news .content .search-box .bootstrap-select > select.mobile-device:focus + .dropdown-toggle,
+.latest-news .content .search-box button.btn.dropdown-toggle.btn-light, .latest-news .content .search-box .bootstrap-select .dropdown-menu li a, .latest-news .content .search-box .content li.active,
+.latest-news .content .search-box .dropdown-item.active,
+.latest-news .content .search-box .bootstrap-select .dropdown-menu li:focus,
+.latest-news .content .search-box .bootstrap-select .dropdown-menu li:active,
+.latest-news .content .search-box button.btn.dropdown-toggle.btn-light:focus,
+.latest-news .content .search-box .show > .btn-light.dropdown-toggle:focus {
+  border: none;
+  outline: none; }
+
+.latest-news .content .search-box .dropdown-toggle::after, .latest-news .content .search-box .dropdown.bootstrap-select.show .dropdown-toggle::after {
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  border-top: 0;
+  margin-top: 0;
+  border-bottom: 0; }
+
+.nav-bar .search form, .latest-news .content .search-box .dropdown-toggle::after, .world-cars .content .prices-cars .card-price .card .card-img img, footer .form-search {
+  width: 100%;
+  height: 100%; }
+
+.nav-bar .nav .slide-bar, footer .form-search {
+  left: 0;
+  top: 0; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #c3c3c3; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  background-color: #e5e5e5; }
+
+a.btn-bottom,
+a.btn-bottom:focus {
+  background-color: #ed2228 !important;
+  color: #fff;
+  font-family: "frtBold";
+  display: block;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  width: 100%;
+  font-size: 14px; }
+
+.img {
+  height: 280px; }
+
+.img-video-1 {
+  background-image: url(../images/Layer-4.png); }
+
+.img-video-2 {
+  background-image: url(../images/Layer-690.png); }
+
+.img-video-3 {
+  background-image: url(../images/Layer-691.png); }
+
+@font-face {
+  font-family: "frt";
+  src: url("../fonts/FrutigerLTArabic-55Roman.ttf"); }
+
+@font-face {
+  font-family: "frtBold";
+  src: url("../fonts/FrutigerLTArabic-65Bold.ttf"); }
+
+@font-face {
+  font-family: "frtLight";
+  src: url("../fonts/FrutigerLTArabic-45Light.ttf"); }
+
+@font-face {
+  font-family: "frtBlk";
+  src: url("../fonts/FrutigerLTArabic-75Black.ttf"); }
+
+/* navbar */
+.nav-bar {
+  padding: 25px 20px 18px;
+  /* search */ }
+  .nav-bar .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: relative; }
+    @media (max-width: 425px) {
+      .nav-bar .nav .logo {
+        width: 200px; } }
+    .nav-bar .nav .logo img {
+      width: 100%; }
+    .nav-bar .nav .slide-bar {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media (max-width: 991px) {
+        .nav-bar .nav .slide-bar {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          background: #f6f6f6;
+          z-index: 99999;
+          -webkit-transform-origin: right;
+                  transform-origin: right;
+          -webkit-transform: scaleX(0);
+                  transform: scaleX(0); }
+          .nav-bar .nav .slide-bar.open {
+            -webkit-transform-origin: left;
+                    transform-origin: left;
+            -webkit-transform: scaleX(1);
+                    transform: scaleX(1); } }
+      .nav-bar .nav .slide-bar nav {
+        overflow: hidden;
+        margin: 0; }
+        .nav-bar .nav .slide-bar nav ul {
+          margin: 0; }
+          @media (max-width: 991px) {
+            .nav-bar .nav .slide-bar nav ul {
+              display: block;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              -webkit-transform: translate(-50%, -50%);
+                      transform: translate(-50%, -50%); } }
+        .nav-bar .nav .slide-bar nav li {
+          margin-left: 20px;
+          text-align: center; }
+          @media (max-width: 1199px) {
+            .nav-bar .nav .slide-bar nav li {
+              margin-left: 15px; } }
+          @media (max-width: 991px) {
+            .nav-bar .nav .slide-bar nav li {
+              margin-bottom: 15px; } }
+          .nav-bar .nav .slide-bar nav li a {
+            color: #000;
+            font-size: 16px;
+            font-family: "frtBold"; }
+            @media (max-width: 1199px) {
+              .nav-bar .nav .slide-bar nav li a {
+                font-size: 14px; } }
+            .nav-bar .nav .slide-bar nav li a:hover {
+              color: #ed2228; }
+        .nav-bar .nav .slide-bar nav.fadein ul {
+          opacity: 0; }
+          @media (max-width: 991px) {
+            .nav-bar .nav .slide-bar nav.fadein ul {
+              opacity: 1; } }
+  .nav-bar .close-tab {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    display: none; }
+    @media (max-width: 991px) {
+      .nav-bar .close-tab {
+        display: block; } }
+    .nav-bar .close-tab i.fa-times {
+      color: #f6f6f6;
+      background-color: #ed2228;
+      width: 52px;
+      height: 52px;
+      line-height: 52px;
+      text-align: center;
+      cursor: pointer; }
+  .nav-bar .search {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    overflow: hidden; }
+    @media (max-width: 991px) {
+      .nav-bar .search {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        z-index: 999999; } }
+    .nav-bar .search.media {
+      display: none; }
+    @media (max-width: 991px) {
+      .nav-bar .search.large {
+        display: none; }
+      .nav-bar .search.media {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        z-index: 999999; } }
+    .nav-bar .search .btn-search {
+      width: 52px;
+      height: 52px;
+      line-height: 52px;
+      text-align: center;
+      background: #ed2228;
+      color: #f6f6f6;
+      display: inline-table;
+      cursor: pointer; }
+      .nav-bar .search .btn-search.fadeout {
+        display: none; }
+        @media (max-width: 991px) {
+          .nav-bar .search .btn-search.fadeout {
+            display: block; } }
+    .nav-bar .search form {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative;
+      left: -100%;
+      overflow: hidden; }
+      @media (max-width: 991px) {
+        .nav-bar .search form {
+          position: fixed;
+          left: 0;
+          top: 0;
+          visibility: hidden;
+          opacity: 0;
+          background: #333333e6; }
+          .nav-bar .search form.open {
+            visibility: visible;
+            opacity: 1; } }
+      .nav-bar .search form.open {
+        left: 0; }
+      .nav-bar .search form input {
+        width: 0;
+        height: 52px;
+        background: transparent;
+        background: #fff;
+        line-height: 52px;
+        border-radius: 20px; }
+        .nav-bar .search form input.input-open {
+          width: 250px;
+          position: relative;
+          border-radius: 29px;
+          padding: 0px 10px; }
+      .nav-bar .search form button {
+        position: relative;
+        left: 40px;
+        display: none;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #ed2228;
+        color: #f6f6f6;
+        border-radius: 50%;
+        padding: 0; }
+        .nav-bar .search form button i {
+          font-size: 12px; }
+        .nav-bar .search form button.btn-open {
+          display: block; }
+      .nav-bar .search form .fa.fa-times {
+        position: absolute;
+        top: 20%;
+        font-size: 14px;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #ed2228;
+        border-radius: 50%;
+        cursor: pointer; }
+  .nav-bar .toggle {
+    display: none;
+    cursor: pointer; }
+    @media (max-width: 991px) {
+      .nav-bar .toggle {
+        display: block; } }
+    .nav-bar .toggle i {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      font-size: 25px; }
+
+.latest-news {
+  background-color: #000;
+  height: 280px;
+  background-image: url(../images/Layer-2.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 9999; }
+  @media (max-width: 991px) {
+    .latest-news {
+      height: 250px;
+      overflow: hidden; } }
+  @media (max-width: 767px) {
+    .latest-news {
+      height: 350px; } }
+  .latest-news .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 280px; }
+    @media (max-width: 991px) {
+      .latest-news .content {
+        height: 250px; } }
+    @media (max-width: 767px) {
+      .latest-news .content {
+        height: 350px; } }
+    .latest-news .content .cont {
+      position: relative;
+      z-index: 1; }
+      .latest-news .content .cont h1 {
+        font-size: 20px;
+        color: #f6f6f6;
+        margin-bottom: 30px;
+        font-family: "frtBlk";
+        line-height: 1.7; }
+        @media (max-width: 991px) {
+          .latest-news .content .cont h1 {
+            margin: 15px 0px; } }
+        @media (max-width: 767px) {
+          .latest-news .content .cont h1 {
+            font-size: 17px; } }
+    .latest-news .content .search-box {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media (max-width: 480px) {
+        .latest-news .content .search-box {
+          display: block; } }
+      .latest-news .content .search-box form {
+        margin: 5px;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap; }
+        @media (max-width: 767px) {
+          .latest-news .content .search-box form {
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; } }
+        @media (max-width: 480px) {
+          .latest-news .content .search-box form {
+            display: block;
+            text-align: center; } }
+      .latest-news .content .search-box .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+        font-size: 16px;
+        color: #adadad !important;
+        font-family: "frt";
+        line-height: 34px;
+        padding-right: 10px;
+        text-align: right; }
+        @media (max-width: 480px) {
+          .latest-news .content .search-box .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+            text-align: center; } }
+      .latest-news .content .search-box .dropdown.bootstrap-select {
+        width: 240px;
+        height: 46px;
+        margin-left: 5px;
+        background-color: #f6f6f6; }
+        @media (max-width: 1199px) {
+          .latest-news .content .search-box .dropdown.bootstrap-select {
+            width: 200px; } }
+        @media (max-width: 991px) {
+          .latest-news .content .search-box .dropdown.bootstrap-select {
+            margin: 5px;
+            width: 215px; } }
+        @media (max-width: 767px) {
+          .latest-news .content .search-box .dropdown.bootstrap-select {
+            width: 200px;
+            height: 42px; } }
+        @media (max-width: 480px) {
+          .latest-news .content .search-box .dropdown.bootstrap-select {
+            display: block;
+            margin: 5px auto;
+            width: 80%; } }
+      .latest-news .content .search-box .dropdown-toggle::after {
+        content: "\f107";
+        color: #adadad !important;
+        text-align: left;
+        line-height: 32px;
+        margin-left: 0;
+        border-left: 0;
+        font-size: 12px; }
+        @media (max-width: 480px) {
+          .latest-news .content .search-box .dropdown-toggle::after {
+            width: auto; } }
+      .latest-news .content .search-box .dropdown.bootstrap-select.show .dropdown-toggle::after {
+        content: "\f106";
+        color: #adadad !important; }
+      .latest-news .content .search-box .bootstrap-select .dropdown-toggle:focus,
+      .latest-news .content .search-box .bootstrap-select > select.mobile-device:focus + .dropdown-toggle,
+      .latest-news .content .search-box button.btn.dropdown-toggle.btn-light {
+        background-color: #f6f6f6; }
+      .latest-news .content .search-box div#bs-select-2,
+      .latest-news .content .search-box div#bs-select-1,
+      .latest-news .content .search-box div#bs-select-3,
+      .latest-news .content .search-box div#bs-select-4 {
+        margin-left: 12px; }
+      .latest-news .content .search-box .dropdown-menu.show {
+        max-height: 200px !important; }
+      .latest-news .content .search-box .bootstrap-select > .dropdown-toggle {
+        height: 100%; }
+      .latest-news .content .search-box .bootstrap-select .dropdown-menu li a {
+        font-size: 14px;
+        font-family: "frt"; }
+      .latest-news .content .search-box button[type=submit] {
+        width: 100px;
+        height: 46px;
+        background: #ed2228;
+        color: #fff; }
+        @media (max-width: 767px) {
+          .latest-news .content .search-box button[type=submit] {
+            height: 42px;
+            margin-top: 10px; } }
+        @media (max-width: 480px) {
+          .latest-news .content .search-box button[type=submit] {
+            text-align: center;
+            width: 80%; } }
+        .latest-news .content .search-box button[type=submit] i {
+          font-size: 12px; }
+        .latest-news .content .search-box button[type=submit] span {
+          font-size: 18px;
+          font-family: "frtBold";
+          margin-right: 6px; }
+      .latest-news .content .search-box .content li.active,
+      .latest-news .content .search-box .dropdown-item.active {
+        color: #ed2228;
+        margin: 0; }
+      .latest-news .content .search-box button.btn.dropdown-toggle.btn-light {
+        margin: 0; }
+      .latest-news .content .search-box .dropdown-item.active,
+      .latest-news .content .search-box .dropdown-item:active {
+        background-color: #f6f6f6; }
+      .latest-news .content .search-box .bootstrap-select .dropdown-toggle:focus,
+      .latest-news .content .search-box .bootstrap-select .dropdown-menu li:focus,
+      .latest-news .content .search-box .bootstrap-select > select.mobile-device:focus + .dropdown-toggle,
+      .latest-news .content .search-box .bootstrap-select .dropdown-menu li:active,
+      .latest-news .content .search-box button.btn.dropdown-toggle.btn-light:focus,
+      .latest-news .content .search-box .show > .btn-light.dropdown-toggle:focus {
+        outline: none !important;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+
+.world-cars {
+  padding: 50px 0px; }
+  @media (max-width: 991px) {
+    .world-cars {
+      padding: 25px 0px; } }
+  .world-cars .content {
+    position: relative;
+    height: 100%; }
+    .world-cars .content h2 {
+      color: #000;
+      font-size: 20px;
+      margin: 30px 0px 10px;
+      font-family: "frtBlk";
+      position: relative;
+      line-height: 1.7; }
+      @media (max-width: 767px) {
+        .world-cars .content h2 {
+          margin: 15px 0px 10px; } }
+      .world-cars .content h2::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        width: 100%;
+        height: 2px;
+        background-color: #e7e7e7; }
+      .world-cars .content h2::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        background-color: #ed2228;
+        width: 60px;
+        height: 2px; }
+    .world-cars .content .news .images {
+      overflow: hidden;
+      margin-top: 50px;
+      background-image: url(../images/Layer-693.png);
+      background-size: cover;
+      position: relative;
+      background-position: center;
+      height: 540px; }
+      .world-cars .content .news .images .bottom {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.702);
+        padding: 25px 45px; }
+        @media (max-width: 767px) {
+          .world-cars .content .news .images .bottom {
+            padding: 20px; } }
+        .world-cars .content .news .images .bottom h3 {
+          color: #f6f6f6;
+          font-size: 21px;
+          font-family: "frtBold";
+          margin-bottom: 15px;
+          line-height: 1.7; }
+          @media (max-width: 767px) {
+            .world-cars .content .news .images .bottom h3 {
+              font-size: 17px; } }
+          @media (max-width: 480px) {
+            .world-cars .content .news .images .bottom h3 {
+              font-size: 16px;
+              margin-bottom: 10px; } }
+        .world-cars .content .news .images .bottom p {
+          color: #adadad;
+          font-size: 16px;
+          margin: 0;
+          font-family: "frt"; }
+          @media (max-width: 480px) {
+            .world-cars .content .news .images .bottom p {
+              font-size: 14px; } }
+    .world-cars .content .news .cars-prices {
+      margin-top: 30px; }
+      .world-cars .content .news .cars-prices .cards {
+        background-color: #fff;
+        -webkit-box-shadow: 10px 10px 10px 10px #f8f8f8;
+                box-shadow: 10px 10px 10px 10px #f8f8f8;
+        margin-top: 20px;
+        border: 1px solid #f8f8f8; }
+        @media (max-width: 767px) {
+          .world-cars .content .news .cars-prices .cards {
+            display: block; } }
+        .world-cars .content .news .cars-prices .cards .car-img,
+        .world-cars .content .news .cars-prices .cards .car-pargraph {
+          width: 50%; }
+          @media (max-width: 767px) {
+            .world-cars .content .news .cars-prices .cards .car-img,
+            .world-cars .content .news .cars-prices .cards .car-pargraph {
+              width: 100%; } }
+        .world-cars .content .news .cars-prices .cards .car-img {
+          overflow: hidden; }
+          .world-cars .content .news .cars-prices .cards .car-img .img {
+            height: 280px;
+            -webkit-transform: scale(1);
+                    transform: scale(1); }
+            .world-cars .content .news .cars-prices .cards .car-img .img img {
+              width: 100%;
+              -o-object-fit: cover;
+                 object-fit: cover;
+              height: 100%; }
+            .world-cars .content .news .cars-prices .cards .car-img .img:hover {
+              -webkit-transform: scale(1.1);
+                      transform: scale(1.1); }
+        .world-cars .content .news .cars-prices .cards .car-pargraph {
+          padding: 20px 30px; }
+        .world-cars .content .news .cars-prices .cards a.head {
+          font-size: 21px;
+          color: #000;
+          font-family: "frtBold";
+          line-height: 1.7; }
+          @media (max-width: 1199px) {
+            .world-cars .content .news .cars-prices .cards a.head {
+              font-size: 18px; } }
+          @media (max-width: 767px) {
+            .world-cars .content .news .cars-prices .cards a.head {
+              text-align: right;
+              font-size: 16px; } }
+        .world-cars .content .news .cars-prices .cards p {
+          font-size: 16px;
+          color: #7d7d7d;
+          margin-bottom: 30px;
+          font-family: "frt"; }
+          @media (max-width: 767px) {
+            .world-cars .content .news .cars-prices .cards p {
+              font-size: 14px; } }
+        .world-cars .content .news .cars-prices .cards a.link {
+          font-size: 12px;
+          color: #f6f6f6;
+          width: 79px;
+          height: 25px;
+          font-size: 12px;
+          display: inline-block;
+          text-align: center;
+          line-height: 22px;
+          color: #fff;
+          margin: 0px 5px; }
+          .world-cars .content .news .cars-prices .cards a.link:nth-of-type(2) {
+            background-color: #efa81f; }
+          .world-cars .content .news .cars-prices .cards a.link:nth-of-type(3) {
+            background-color: #7d7d7d; }
+          .world-cars .content .news .cars-prices .cards a.link:nth-of-type(4) {
+            background-color: #bebfbe; }
+        .world-cars .content .news .cars-prices .cards i {
+          font-size: 16px; }
+        .world-cars .content .news .cars-prices .cards .btn-bottom {
+          margin-top: 15px !important; }
+    .world-cars .content .news .btn-bottom {
+      margin-top: 20px !important; }
+    .world-cars .content .marka .images {
+      margin: 50px 0px 30px;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .world-cars .content .marka .images a.link-img {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 85px;
+        width: 33%; }
+        .world-cars .content .marka .images a.link-img:hover {
+          -webkit-box-shadow: 5px 5px 20px #ccc;
+                  box-shadow: 5px 5px 20px #ccc; }
+        @media (max-width: 991px) {
+          .world-cars .content .marka .images a.link-img {
+            width: 25%; } }
+    .world-cars .content .video .card-video {
+      margin: 35px 0px 0px; }
+      @media (max-width: 991px) {
+        .world-cars .content .video .card-video {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+      .world-cars .content .video .card-video .card {
+        border: none;
+        position: relative; }
+        @media (max-width: 991px) {
+          .world-cars .content .video .card-video .card {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 50%;
+            text-align: center; } }
+        @media (max-width: 767px) {
+          .world-cars .content .video .card-video .card {
+            margin: auto;
+            width: 60%; } }
+        @media (max-width: 480px) {
+          .world-cars .content .video .card-video .card {
+            text-align: center;
+            width: 80%; } }
+        .world-cars .content .video .card-video .card .fade-out {
+          position: absolute;
+          left: 50%;
+          top: 40%;
+          -webkit-transform: translate(-50%, -40%);
+                  transform: translate(-50%, -40%);
+          background: #fff;
+          text-align: center;
+          border-radius: 50%; }
+          .world-cars .content .video .card-video .card .fade-out ul {
+            margin: 0;
+            padding: 0;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            .world-cars .content .video .card-video .card .fade-out ul li {
+              width: 50px;
+              height: 50px;
+              line-height: 50px; }
+            .world-cars .content .video .card-video .card .fade-out ul i,
+            .world-cars .content .video .card-video .card .fade-out ul a {
+              color: #ed2228;
+              font-size: 16px; }
+        .world-cars .content .video .card-video .card .img-video {
+          background-repeat: no-repeat;
+          height: 180px; }
+        .world-cars .content .video .card-video .card .card-body {
+          padding: 0; }
+        .world-cars .content .video .card-video .card p {
+          font-size: 16px;
+          color: #000;
+          font-family: "frtBold";
+          margin: 10px 0px 25px; }
+    .world-cars .content .video .btn-video {
+      margin: 0px 0px 30px !important; }
+    .world-cars .content .video .btn-bottom {
+      margin-top: 20px !important; }
+    .world-cars .content .prices-cars .card-price {
+      margin-top: 40px;
+      overflow: hidden; }
+      .world-cars .content .prices-cars .card-price .card {
+        border: none; }
+        @media (max-width: 991px) {
+          .world-cars .content .prices-cars .card-price .card {
+            height: 80%;
+            margin: auto; } }
+        .world-cars .content .prices-cars .card-price .card .card-img {
+          height: 168px; }
+          @media (max-width: 991px) {
+            .world-cars .content .prices-cars .card-price .card .card-img {
+              height: auto;
+              width: 60%;
+              margin: auto; } }
+          @media (max-width: 425px) {
+            .world-cars .content .prices-cars .card-price .card .card-img {
+              width: 80%; } }
+        .world-cars .content .prices-cars .card-price .card .card-body {
+          padding: 10px 10px 20px; }
+          @media (max-width: 991px) {
+            .world-cars .content .prices-cars .card-price .card .card-body {
+              text-align: center; } }
+          .world-cars .content .prices-cars .card-price .card .card-body span {
+            font-size: 16px;
+            color: #000;
+            font-family: "frt";
+            margin: 0; }
+          .world-cars .content .prices-cars .card-price .card .card-body p {
+            font-size: 17px;
+            color: #ed2228;
+            font-family: "frtBlk";
+            margin: 10px 0 0; }
+
+footer {
+  position: relative;
+  padding: 50px 0; }
+  @media (max-width: 767px) {
+    footer {
+      padding: 0;
+      height: 350px; } }
+  footer .form-search {
+    position: absolute;
+    height: 300px; }
+    footer .form-search .content {
+      position: relative;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 290px;
+      background: #ed2228; }
+      @media (max-width: 767px) {
+        footer .form-search .content {
+          height: 200px; } }
+      footer .form-search .content .cont {
+        position: absolute;
+        text-align: center; }
+        footer .form-search .content .cont h2 {
+          font-size: 26px;
+          color: #f6f6f6;
+          font-family: "frtBlk"; }
+          @media (max-width: 767px) {
+            footer .form-search .content .cont h2 {
+              font-size: 20px; } }
+        footer .form-search .content .cont p {
+          font-size: 18px;
+          color: #f6f6f6;
+          margin: 15px 0px 30px;
+          font-family: "frtLight"; }
+          @media (max-width: 767px) {
+            footer .form-search .content .cont p {
+              font-size: 14px; } }
+          @media (max-width: 480px) {
+            footer .form-search .content .cont p {
+              margin: 0 0 15px 0; } }
+        footer .form-search .content .cont form {
+          height: 52px;
+          overflow: hidden; }
+          @media (max-width: 425px) {
+            footer .form-search .content .cont form {
+              height: auto; } }
+          footer .form-search .content .cont form input {
+            width: 450px;
+            height: 52px;
+            background-color: #fff;
+            padding-right: 20px; }
+            footer .form-search .content .cont form input::-webkit-input-placeholder {
+              color: #7d7d7d;
+              font-family: "frt";
+              font-size: 16px; }
+            footer .form-search .content .cont form input::-moz-placeholder {
+              color: #7d7d7d;
+              font-family: "frt";
+              font-size: 16px; }
+            footer .form-search .content .cont form input:-ms-input-placeholder {
+              color: #7d7d7d;
+              font-family: "frt";
+              font-size: 16px; }
+            footer .form-search .content .cont form input::-ms-input-placeholder {
+              color: #7d7d7d;
+              font-family: "frt";
+              font-size: 16px; }
+            footer .form-search .content .cont form input::placeholder {
+              color: #7d7d7d;
+              font-family: "frt";
+              font-size: 16px; }
+              @media (max-width: 425px) {
+                footer .form-search .content .cont form input::-webkit-input-placeholder {
+                  font-size: 14px; }
+                footer .form-search .content .cont form input::-moz-placeholder {
+                  font-size: 14px; }
+                footer .form-search .content .cont form input:-ms-input-placeholder {
+                  font-size: 14px; }
+                footer .form-search .content .cont form input::-ms-input-placeholder {
+                  font-size: 14px; }
+                footer .form-search .content .cont form input::placeholder {
+                  font-size: 14px; } }
+            @media (max-width: 767px) {
+              footer .form-search .content .cont form input {
+                width: 300px;
+                height: 42px; } }
+          footer .form-search .content .cont form .btn {
+            width: 114px;
+            height: 52px;
+            background-color: #000;
+            border-radius: 0;
+            font-size: 18px;
+            color: #f6f6f6;
+            font-family: "frtBold";
+            border: none;
+            padding: 0px; }
+            @media (max-width: 767px) {
+              footer .form-search .content .cont form .btn {
+                height: 42px; } }
+            @media (max-width: 425px) {
+              footer .form-search .content .cont form .btn {
+                margin-top: 10px; } }
+    footer .form-search .scoial-media {
+      padding-top: 45px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media (max-width: 767px) {
+        footer .form-search .scoial-media .logo {
+          width: 200px; } }
+      @media (max-width: 425px) {
+        footer .form-search .scoial-media .logo {
+          width: 170px; } }
+      footer .form-search .scoial-media .logo img {
+        width: 100%; }
+      footer .form-search .scoial-media .scoial {
+        position: relative; }
+        footer .form-search .scoial-media .scoial::before {
+          position: absolute;
+          content: '';
+          right: -50px;
+          width: 2px;
+          height: 100%;
+          background-color: #858484; }
+          @media (max-width: 480px) {
+            footer .form-search .scoial-media .scoial::before {
+              content: none; } }
+        footer .form-search .scoial-media .scoial ul {
+          margin-bottom: 0; }
+          footer .form-search .scoial-media .scoial ul li {
+            margin-left: 30px; }
+            @media (max-width: 767px) {
+              footer .form-search .scoial-media .scoial ul li {
+                margin-left: 15px; } }
+            footer .form-search .scoial-media .scoial ul li a {
+              color: #fff;
+              font-size: 18px; }
+              footer .form-search .scoial-media .scoial ul li a:hover {
+                color: #ed2228;
+                cursor: pointer; }
+              @media (max-width: 425px) {
+                footer .form-search .scoial-media .scoial ul li a {
+                  font-size: 14px; } }
+
+.svg {
+  width: 100%;
+  height: 450px;
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%, 0% 43%);
+          clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%, 0% 43%);
+  background-color: #000; }
+
+/*# sourceMappingURL=main.css.map */
